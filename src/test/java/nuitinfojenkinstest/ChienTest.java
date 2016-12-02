@@ -54,11 +54,11 @@ public class ChienTest {
      */
     @Test
     public void testCri_faux() {
-        System.out.println("cri doiit etre faux");
+        System.out.println("cri doit etre faux");
         Chien instance = new Chien();
         String expResult = "machin";
         String result = instance.cri();
-        assertEquals(expResult, result);
+        assertNotEquals(expResult, result);
     }
     
 }
